@@ -170,7 +170,7 @@ public class Script {
         for(int i = 0; i < lines.length; i++) {
             String line = lines[i];
             byte[] data = CodeConverter.stringToBytes(line);
-            commands.get(i).setBytes(data);
+            getCommandAtIndex(i).setBytes(data);
         }
     }
 
